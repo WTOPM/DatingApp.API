@@ -34,8 +34,9 @@ namespace DatingApp.API.Data
                {
                  if (computedHash[i] != passwordHash[i]) return false;
                }
+               return true;
             }
-            return true;
+            
         }
 
         public async Task<User> Register(User user, string password)
@@ -58,7 +59,7 @@ namespace DatingApp.API.Data
             }
         }
 
-        public async Task<bool> UserExist(string username)
+        public async Task<bool> UserExists(string username)
         {
             if(await _context.Users.AnyAsync(x => x.Username == username))
                 return true;
