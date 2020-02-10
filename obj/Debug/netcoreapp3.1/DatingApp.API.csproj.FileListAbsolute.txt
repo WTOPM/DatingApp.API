@@ -59,3 +59,8 @@
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
