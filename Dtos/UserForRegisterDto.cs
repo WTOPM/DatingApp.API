@@ -6,6 +6,9 @@ namespace DatingApp.API.Dtos
     {
         [Required]
         public string Username { get; set; }
+
+        [Required]
+        [StringLength(8, MinimumLength = 4, ErrorMessage = "Must 4 - 8")]
         public string Password { get; set; }
     }
 }
