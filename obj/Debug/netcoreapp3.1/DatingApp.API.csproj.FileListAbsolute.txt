@@ -138,3 +138,5 @@ C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\
 C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csproj.CopyComplete
 C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.dll
 C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.pdb
+C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Шторм\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

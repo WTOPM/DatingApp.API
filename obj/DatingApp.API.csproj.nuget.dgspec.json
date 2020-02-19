@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {}
+    "c:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {
+    "c:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "c:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "C:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+        "projectPath": "c:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\Шторм\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\obj\\",
+        "outputPath": "c:\\Users\\Шторм\\Desktop\\GIT\\DatingApp\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
