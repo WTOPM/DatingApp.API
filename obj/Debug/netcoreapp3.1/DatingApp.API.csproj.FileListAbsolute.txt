@@ -142,3 +142,4 @@ C:/Users/Шторм/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/
 C:/Users/Шторм/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Debug/netcoreapp3.1/CloudinaryDotNet.dll
