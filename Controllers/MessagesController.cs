@@ -58,12 +58,13 @@ namespace DatingApp.API.Controllers
 
             _repo.Add(message);
 
+            var messageToReturn = _mapper.Map<MessageForCreationDto>(message);
+
             if(await _repo.SaveAll())
-            {
-                return CreatedAtRoute("GetMessage", new {id = message.Id}, message);
+            return CreatedAtRoute("GetMessage", new {id = message.Id}, messageToReturn);
 
                 throw new Exception("Created message fail on save");
-            }
+            
  
         }
     }
