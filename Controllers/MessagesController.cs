@@ -26,13 +26,13 @@ namespace DatingApp.API.Controllers
             _repo = repo;
 
         }
-        [HttpGet("{id}", Name = "Get message")]
+        [HttpGet("{id}", Name = "Get Message")]
         public async Task<IActionResult> GetMessage(int userId, int id)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
                 return Unauthorized();
 
-                var messageFromRepo = _repo.GetMessage(id);
+                var messageFromRepo = await _repo.GetMessage(id);
 
                 if (messageFromRepo == null)
                 {
@@ -42,8 +42,7 @@ namespace DatingApp.API.Controllers
                 return Ok(messageFromRepo);
         }
         [HttpPost]
-        public async Task<IActionResult> CreateMessage(int userId,
-            MessageForCreationDto messageForCreationDto)
+        public async Task<IActionResult> CreateMessage(int userId, MessageForCreationDto messageForCreationDto)
         {
            if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
                 return Unauthorized();
