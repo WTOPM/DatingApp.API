@@ -1,6 +1,6 @@
-.vscode
-bin
-obj
-*.db
-wwwroot
+# .vscode
+# bin
+# obj
+# *.db
+# wwwroot
 
