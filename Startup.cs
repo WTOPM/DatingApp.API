@@ -112,10 +112,10 @@ namespace DatingApp.API
         endpoints.MapFallbackToController("Index", "Fallback");
     });
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapControllers();
+            // });
         }
     }
 }

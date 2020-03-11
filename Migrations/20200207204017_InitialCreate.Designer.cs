@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DatingApp.API.Migrations
 {
@@ -25,7 +24,7 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

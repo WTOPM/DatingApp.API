@@ -4,7 +4,6 @@ using DatingApp.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DatingApp.API.Migrations
@@ -41,16 +40,16 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Content")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("DateRead")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsRead")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("MessageSent")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("RecipientDeleted")
                         .HasColumnType("INTEGER");
@@ -80,19 +79,19 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("DateAdded")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsMain")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PublicId")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Url")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
@@ -111,43 +110,43 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("City")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Country")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Interests")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Introduction")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("KnownAs")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("LastActive")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("LookingFor")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.Property<byte[]>("PasswordHash")
-                        .HasColumnType("VARBINARY(MAX)");
+                        .HasColumnType("BLOB");
 
                     b.Property<byte[]>("PasswordSalt")
-                        .HasColumnType("VARBINARY(MAX)");
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("Username")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -161,7 +160,7 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(MAX)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
