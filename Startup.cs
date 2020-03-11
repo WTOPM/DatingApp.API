@@ -29,8 +29,17 @@ namespace DatingApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(x => x.UseSqlite
-            (Configuration.GetConnectionString("DefaultConnection")));
+            // services.AddDbContext<DataContext>(x => x.UseMySql
+            // (Configuration.GetConnectionString("DefaultConnection")));
+            var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+ 
+    services.AddDbContext<DataContext>(options =>
+        options.UseMySQL(
+            sqlConnectionString,
+            b => b.MigrationsAssembly("AspNetCoreMultipleProject")
+        )
+    );
+
             services.AddControllers();
           services.AddMvc().AddNewtonsoftJson(options=> options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddCors();
@@ -87,6 +96,22 @@ namespace DatingApp.API
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            // app.UseMvc(routes => {
+            //     routes.MapSpaFallbackRoute(
+            //         name: "spa-fallback",
+            //         defaults: new { controller = "Fallback", action = "Index"}
+            //     );
+            // });
+            app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Fallback}/{action=Index}/{id?}");
+
+        endpoints.MapFallbackToController("Index", "Fallback");
+    });
 
             app.UseEndpoints(endpoints =>
             {
