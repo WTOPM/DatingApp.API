@@ -34,9 +34,8 @@ namespace DatingApp.API
             var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
  
     services.AddDbContext<DataContext>(options =>
-        options.UseMySQL(
-            sqlConnectionString,
-            b => b.MigrationsAssembly("AspNetCoreMultipleProject")
+        options.UseSqlServer(
+            sqlConnectionString
         )
     );
 

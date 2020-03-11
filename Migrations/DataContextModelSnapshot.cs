@@ -2,6 +2,7 @@
 using System;
 using DatingApp.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -14,14 +15,15 @@ namespace DatingApp.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("ProductVersion", "3.1.1");
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
                 {
-                    b.Property<int>("LikerId");
+                    b.Property<int>("LikerId")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("LikeeId");
+                    b.Property<int>("LikeeId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("LikerId", "LikeeId");
 
@@ -33,23 +35,32 @@ namespace DatingApp.API.Migrations
             modelBuilder.Entity("DatingApp.API.Models.Message", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Content");
+                    b.Property<string>("Content")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<DateTime?>("DateRead");
+                    b.Property<DateTime?>("DateRead")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<bool>("IsRead");
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("MessageSent");
+                    b.Property<DateTime>("MessageSent")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<bool>("RecipientDeleted");
+                    b.Property<bool>("RecipientDeleted")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("RecipientId");
+                    b.Property<int>("RecipientId")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<bool>("SenderDeleted");
+                    b.Property<bool>("SenderDeleted")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("SenderId");
+                    b.Property<int>("SenderId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
@@ -63,19 +74,26 @@ namespace DatingApp.API.Migrations
             modelBuilder.Entity("DatingApp.API.Models.Photo", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("DateAdded");
+                    b.Property<DateTime>("DateAdded")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Description");
+                    b.Property<string>("Description")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<bool>("IsMain");
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("PublicId");
+                    b.Property<string>("PublicId")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Url");
+                    b.Property<string>("Url")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<int>("UserId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
@@ -87,49 +105,65 @@ namespace DatingApp.API.Migrations
             modelBuilder.Entity("DatingApp.API.Models.User", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("City");
+                    b.Property<string>("City")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Country");
+                    b.Property<string>("Country")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<DateTime>("Created");
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<DateTime>("DateOfBirth");
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Gender");
+                    b.Property<string>("Gender")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Interests");
+                    b.Property<string>("Interests")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("Introduction");
+                    b.Property<string>("Introduction")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("KnownAs");
+                    b.Property<string>("KnownAs")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<DateTime>("LastActive");
+                    b.Property<DateTime>("LastActive")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<string>("LookingFor");
+                    b.Property<string>("LookingFor")
+                        .HasColumnType("VARCHAR(MAX)");
 
-                    b.Property<byte[]>("PasswordHash");
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("VARBINARY(MAX)");
 
-                    b.Property<byte[]>("PasswordSalt");
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("VARBINARY(MAX)");
 
-                    b.Property<string>("Username");
+                    b.Property<string>("Username")
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("DatingApp.API.Models.Value", b =>
+            modelBuilder.Entity("DatingApp.API.Models.Weather", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Values");
+                    b.ToTable("Weathers");
                 });
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
@@ -137,12 +171,14 @@ namespace DatingApp.API.Migrations
                     b.HasOne("DatingApp.API.Models.User", "Likee")
                         .WithMany("Likers")
                         .HasForeignKey("LikeeId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("DatingApp.API.Models.User", "Liker")
                         .WithMany("Likees")
                         .HasForeignKey("LikerId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DatingApp.API.Models.Message", b =>
@@ -150,12 +186,14 @@ namespace DatingApp.API.Migrations
                     b.HasOne("DatingApp.API.Models.User", "Recipient")
                         .WithMany("MessagesReceived")
                         .HasForeignKey("RecipientId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("DatingApp.API.Models.User", "Sender")
                         .WithMany("MessagesSent")
                         .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DatingApp.API.Models.Photo", b =>
@@ -163,7 +201,8 @@ namespace DatingApp.API.Migrations
                     b.HasOne("DatingApp.API.Models.User", "User")
                         .WithMany("Photos")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
