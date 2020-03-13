@@ -85,3 +85,7 @@
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/runtimes/win-x86/native/sni.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/System.Net.Http.Formatting.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/System.Web.Http.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/System.Web.Http.WebHost.dll
+/Users/annaodnostalko/Desktop/GIT/DatingApp/DatingApp.API/bin/Release/netcoreapp3.1/System.Web.Http.Common.dll

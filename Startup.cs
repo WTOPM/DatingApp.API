@@ -14,6 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using System.Web;
+using System;
 
 namespace DatingApp.API
 {
@@ -33,11 +35,14 @@ namespace DatingApp.API
             // (Configuration.GetConnectionString("DefaultConnection")));
             var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
  
-    services.AddDbContext<DataContext>(options =>
-        options.UseSqlServer(
-            sqlConnectionString
-        )
-    );
+    // services.AddDbContext<DataContext>(options =>
+    //     options.UseSqlServer(
+    //         sqlConnectionString
+    //     )
+    // );
+    // var ConnectionString = "Data Source=" + HttpContext.Current.Server.MapPath(@"\DatingApp.db");
+    var ConnectionString = "Data Source=" + AppDomain.CurrentDomain.GetData("DataDirectory") + "DatingApp.db";
+    services.AddDbContext<DataContext>(x => x.UseSqlite(ConnectionString));
 
             services.AddControllers();
           services.AddMvc().AddNewtonsoftJson(options=> options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
