@@ -37,6 +37,8 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Microsoft.NetFramework.Analyzers": "2.9.8",
+          "Microsoft.Private.CoreFx.NETCoreApp": "4.4.0-beta-25213-0",
           "System.IdentityModel.Tokens.Jwt": "5.6.0",
           "System.Web.Http.Common": "4.0.20126.16343",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -116,7 +118,6 @@
           "Microsoft.AspNetCore.StaticFiles": "3.1.0.0",
           "Microsoft.AspNetCore.WebSockets": "3.1.0.0",
           "Microsoft.AspNetCore.WebUtilities.Reference": "3.1.0.0",
-          "Microsoft.CSharp.Reference": "4.0.0.0",
           "Microsoft.Extensions.Configuration.CommandLine": "3.1.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "3.1.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "3.1.0.0",
@@ -1017,6 +1018,17 @@
       },
       "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.NetFramework.Analyzers/2.9.8": {},
+      "Microsoft.Private.CoreFx.NETCoreApp/4.4.0-beta-25213-0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netcoreapp2.0/Microsoft.CSharp.dll": {},
+          "ref/netcoreapp2.0/System.ComponentModel.Composition.dll": {},
+          "ref/netcoreapp2.0/System.Data.SqlClient.dll": {}
+        }
+      },
       "Microsoft.Win32.Registry/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
@@ -2262,12 +2274,6 @@
       "Microsoft.AspNetCore.WebUtilities.Reference/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.WebUtilities.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.CSharp.Reference/4.0.0.0": {
-        "compile": {
-          "Microsoft.CSharp.dll": {}
         },
         "compileOnly": true
       },
@@ -3878,6 +3884,20 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+    "Microsoft.NetFramework.Analyzers/2.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8fZYJqeKBW5uuKBact26IeOBogchn5Km85klHqHneRY7Jxp+ERtrw8zJVumNFUVL68pIcf4uKPOY7zfBQ7eY3A==",
+      "path": "microsoft.netframework.analyzers/2.9.8",
+      "hashPath": "microsoft.netframework.analyzers.2.9.8.nupkg.sha512"
+    },
+    "Microsoft.Private.CoreFx.NETCoreApp/4.4.0-beta-25213-0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qMAIFbuKWjrH9cAnuQfVfjeUuG02yJJnw9fhwNHCFMX676M7flD84wvIb+uf9OR2HOkyUOU9oQ+OIQs7VcazQQ==",
+      "path": "microsoft.private.corefx.netcoreapp/4.4.0-beta-25213-0",
+      "hashPath": "microsoft.private.corefx.netcoreapp.4.4.0-beta-25213-0.nupkg.sha512"
+    },
     "Microsoft.Win32.Registry/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -4805,11 +4825,6 @@
       "sha512": ""
     },
     "Microsoft.AspNetCore.WebUtilities.Reference/3.1.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.CSharp.Reference/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

@@ -258,3 +258,9 @@ C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publi
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\Data\UserSeedData.json
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\DatingApp.API.deps.json
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\DatingApp.API.runtimeconfig.json
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\web.config
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\appsettings.Development.json
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\appsettings.json
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\Data\UserSeedData.json
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\DatingApp.API.deps.json
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\publish2\publish2\DatingApp.API.runtimeconfig.json
