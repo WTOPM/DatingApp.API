@@ -90,14 +90,6 @@
               "target": "Package",
               "version": "[5.6.0, )"
             },
-            "Microsoft.NetFramework.Analyzers": {
-              "target": "Package",
-              "version": "[2.9.8, )"
-            },
-            "Microsoft.Private.CoreFx.NETCoreApp": {
-              "target": "Package",
-              "version": "[4.4.0-beta-25213-0, )"
-            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[5.6.0, )"
