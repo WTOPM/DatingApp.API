@@ -218,7 +218,6 @@ C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\SQLit
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Web.Http.Common.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
@@ -240,7 +239,6 @@ C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runti
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csprojAssemblyReference.cache
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\staticwebassets\DatingApp.API.StaticWebAssets.Manifest.cache
@@ -252,3 +250,5 @@ C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\Datin
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csproj.CopyComplete
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.dll
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.pdb
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csproj.CoreCompileInputs.cache
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.genruntimeconfig.cache
