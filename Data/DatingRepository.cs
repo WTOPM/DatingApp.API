@@ -165,5 +165,10 @@ namespace DatingApp.API.Data
 
             return messages;
         }
+
+        public Task<Message> GetHelp(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

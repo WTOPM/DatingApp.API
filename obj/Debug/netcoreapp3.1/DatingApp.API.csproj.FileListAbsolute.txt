@@ -252,3 +252,11 @@ C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\Datin
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.pdb
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.csproj.CoreCompileInputs.cache
 C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\obj\Debug\netcoreapp3.1\DatingApp.API.genruntimeconfig.cache
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\WTOPM\Desktop\GIT\DatingApp\DatingApp.API\bin\Debug\netcoreapp3.1\Prometheus.NetFramework.AspNet.dll

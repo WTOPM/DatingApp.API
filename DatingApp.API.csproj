@@ -4,20 +4,23 @@
     <UserSecretsId>79a3edd0-2092-40a2-a04d-dcb46d5ca9ed</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1"/>
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.6.0"/>
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.0"/>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0"/>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1"/>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.2"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3"/>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0"/>
     <PackageReference Include="CloudinaryDotNet" Version="1.10.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3"/>
     <PackageReference Include="System.Web.Http.Common" Version="4.0.20126.16343"/>
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7"/>
     <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7"/>
+    <PackageReference Include="EntityFramework" Version="6.4.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.3"/>
+    <PackageReference Include="prometheus-net.NetFramework.AspNet" Version="3.5.0"/>
   </ItemGroup>
 </Project>

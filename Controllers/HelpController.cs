@@ -27,17 +27,17 @@ namespace DatingApp.API.Controllers
         }
 
         [HttpGet("{id}", Name = "GetHelp")]
-        public async Task<IActionResult> GetMessage(int userId, int id)
+        public async Task<IActionResult> GetHelp(int userId, int id)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
                 return Unauthorized();
 
-            var messageFromRepo = await _repo.GetMessage(id);
+            var helpFromRepo = await _repo.GetHelp(id);
 
-            if (messageFromRepo == null)
+            if (helpFromRepo == null)
                 return NotFound();
 
-            return Ok(messageFromRepo);
+            return Ok(helpFromRepo);
         }
 /////////////////////////////////////////////////////////////////////////////        
         [HttpGet]
@@ -94,7 +94,7 @@ namespace DatingApp.API.Controllers
             if (await _repo.SaveAll())
             {
                 var messageToReturn = _mapper.Map<MessageToReturnDto>(message);
-                return CreatedAtRoute(nameof(GetMessage), new {userId, id = message.Id}, messageToReturn);
+                return CreatedAtRoute(nameof(GetHelp), new {userId, id = message.Id}, messageToReturn);
             }
 
             throw new Exception("Creating the message failed on save");
