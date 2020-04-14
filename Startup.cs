@@ -33,7 +33,11 @@ namespace DatingApp.API
         {
             // services.AddDbContext<DataContext>(x => x.UseMySql
             // (Configuration.GetConnectionString("DefaultConnection")));
-            var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            //var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+
+                   services.AddDbContext<DataContext>(x => x.UseSqlite
+             (Configuration.GetConnectionString("DefaultConnection")));
  
     // services.AddDbContext<DataContext>(options =>
     //     options.UseSqlServer(

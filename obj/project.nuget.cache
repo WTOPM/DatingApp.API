@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Nu/ADpQSxA2deGDKndqk/pfEy5NIC4g+FIUcb5r1FsgdDc1iv8myOem30r8JSHYqbjUDDLIY0i1NLLWhd0W6oQ==",
+  "dgSpecHash": "btkI4+tCVokagEL9Htv1NqhXpC4ig0ZJoXTsJQ9hwDEgW/n+UwpRvxFr9EQaBYgyY6s1WtdwV1FpLtS9cNBjpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\WTOPM\\Desktop\\GIT\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
   "expectedPackageFiles": [
@@ -42,7 +42,7 @@
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\3.1.3\\microsoft.entityframeworkcore.sqlite.3.1.3.nupkg.sha512",
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\3.1.3\\microsoft.entityframeworkcore.sqlite.core.3.1.3.nupkg.sha512",
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.3\\microsoft.entityframeworkcore.sqlserver.3.1.3.nupkg.sha512",
-    "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.3\\microsoft.entityframeworkcore.tools.3.1.3.nupkg.sha512",
+    "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.2\\microsoft.entityframeworkcore.tools.3.1.2.nupkg.sha512",
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.3\\microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.3\\microsoft.extensions.caching.memory.3.1.3.nupkg.sha512",
     "C:\\Users\\WTOPM\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
