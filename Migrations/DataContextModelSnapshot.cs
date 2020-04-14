@@ -38,16 +38,16 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Content")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<DateTime?>("DateRead")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<bool>("IsRead")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("MessageSent")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<bool>("RecipientDeleted")
                         .HasColumnType("INTEGER");
@@ -77,19 +77,19 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("DateAdded")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<bool>("IsMain")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PublicId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Url")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
@@ -108,34 +108,34 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("City")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Country")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Gender")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Interests")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Introduction")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("KnownAs")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<DateTime>("LastActive")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("LookingFor")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("VARCHAR(MAX)");
@@ -144,7 +144,7 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("VARCHAR(MAX)");
 
                     b.Property<string>("Username")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.HasKey("Id");
 
@@ -158,7 +158,7 @@ namespace DatingApp.API.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("VARCHAR(MAX)");
 
                     b.HasKey("Id");
 

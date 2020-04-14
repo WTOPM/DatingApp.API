@@ -164,11 +164,6 @@ namespace DatingApp.API.Data
                 .ToListAsync();
 
             return messages;
-        }
-
-        public Task<Message> GetHelp(int id)
-        {
-            throw new NotImplementedException();
-        }
+        }       
     }
 }
