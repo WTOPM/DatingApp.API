@@ -164,6 +164,22 @@ namespace DatingApp.API.Data
                 .ToListAsync();
 
             return messages;
-        }       
+        }
+
+        public async Task<Help> GetHelp(int id)
+        {
+            return await _context.Helps.FirstOrDefaultAsync(m => m.Id == id);
+        }
+
+        public Task<PagedList<Help>> GetHelpsForUser(HelpParams helpParams)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Help>> GetHelpProduct(int userId, int productId)
+        {
+
+            throw new NotImplementedException();
+        }
     }
 }
